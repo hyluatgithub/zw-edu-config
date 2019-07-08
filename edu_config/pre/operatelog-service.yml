@@ -1,0 +1,3 @@
+server:
+  context-path: /operatelog
+  port: 8003

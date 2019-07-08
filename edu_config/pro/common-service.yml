@@ -1,0 +1,28 @@
+server:
+  context-path: /common
+  port: 6006
+
+zw:
+  storage:
+    type: tencent
+    oss:
+      access-key-id: ${COLA_ALIYUN_ACCESS_KEY_ID}
+      access-key-secret: ${COLA_ALIYUN_ACCESS_KEY_SECRET}
+      bucket-name: honvay-cola
+      endpoint: oss-cn-hangzhou.aliyuncs.com
+    tencent:
+      cos:
+        secret-id: AKID5ze6JIqXorgGcjoCYfX9VcU7UdZHoyzl
+        secret-key: f6IGzTkneHfplTwAE4f070e3D9qJWWIq
+        region: ap-chengdu
+        bucket-name: zwedu-1251763600
+  vc:
+    sms:
+      template-code: SMS_115750106
+      code-param-name: code
+      sign-name: 教育云平台
+
+security:
+  oauth2:
+    resource:
+      id: common-service

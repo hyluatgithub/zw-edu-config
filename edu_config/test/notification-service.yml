@@ -1,0 +1,13 @@
+server:
+  context-path: /notification
+  port: 8001
+
+zw:
+  sms:  #短信配置
+    type: tencent
+    aliyun:
+      access-key-id: ${COLA_ALIYUN_ACCESS_KEY_ID}
+      access-key-secret: ${COLA_ALIYUN_ACCESS_KEY_SECRET}
+    tencent:
+      appid: 1400024636
+      appkey: 7c4ab8f0561bab549bc9fd4a4828a83c
